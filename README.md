@@ -15,6 +15,7 @@ Consultas
 Get Consultas
 https://apiconsulta.azurewebsites.net/api/consultas
 Retorna uma lista de todas as consultas, podendo ser usado os parametros pacienteId, medicoId, statusId, data.
+
 Exemplo de requisição:
 
 GET https://apiconsulta.azurewebsites.net/api/consultas?medicoId=1
@@ -45,6 +46,7 @@ Response Body
 Get Consulta/{id}
 https://apiconsulta.azurewebsites.net/api/consultas/1
 Passando o id, é retornado uma consulta detalhada.
+
 Exemplo de requisição:
 
 GET https://apiconsulta.azurewebsites.net/api/consultas/1
@@ -75,6 +77,7 @@ Response Body
 Post Consulta
 https://apiconsulta.azurewebsites.net/api/consultas
 Passando um objeto consulta no corpo da requisição irá cadastrar uma nova consulta, sem retorno.
+
 Exemplo de requisição:
 
 POST https://apiconsulta.azurewebsites.net/api/consultas
@@ -98,6 +101,7 @@ Request Body
 Patch Consulta
 https://apiconsulta.azurewebsites.net/api/consultas/{id}
 Passando o valor do statusId no corpo da requisição irá atualizar o status da consulta, sem retorno.
+
 Exemplo de requisição:
 
 PATCH https://apiconsulta.azurewebsites.net/api/consultas/1
@@ -149,6 +153,7 @@ Especialidades
 Get Especialidades
 https://apiconsulta.azurewebsites.net/api/especialidades
 Retorna uma lista de todas as especialidades.
+
 Exemplo de requisição:
 
 GET https://apiconsulta.azurewebsites.net/api/especialidades
@@ -180,6 +185,7 @@ Pacientes
 Get Pacientes
 https://apiconsulta.azurewebsites.net/api/pacientes
 Retorna uma lista de todos os Pacientes.
+
 Exemplo de requisição:
 
 GET https://apiconsulta.azurewebsites.net/api/pacientes
@@ -211,6 +217,7 @@ Status
 Get Status
 https://apiconsulta.azurewebsites.net/api/status
 Retorna uma lista de todos os Status.
+
 Exemplo de requisição:
 
 GET https://apiconsulta.azurewebsites.net/api/status
