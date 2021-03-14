@@ -25,7 +25,7 @@ namespace APIConsulta.Controllers
         public IEnumerable<Consulta> Get(int? pacienteId, int? medicoId, int? statusId, DateTime? data)
         {
 
-            var consultas = _context.Consultas.Include(consulta => consulta.Paciente).Include(consulta => consulta.Medico).ThenInclude(medico => medico.Especialidade);
+            var consultas = _context.Consultas.Include(consulta => consulta.Paciente).Include(consulta => consulta.Medico).ThenInclude(medico => medico.Especialidade).Include(consulta => consulta.Status);
             if(pacienteId != null && pacienteId > 0) consultas.Where(consulta => consulta.PacienteId == pacienteId);
             if (medicoId != null && medicoId > 0) consultas.Where(consulta => consulta.MedicoId == medicoId);
             if (statusId != null && statusId > 0) consultas.Where(consulta => consulta.StatusId == statusId);
