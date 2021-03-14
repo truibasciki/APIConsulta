@@ -54,7 +54,7 @@ namespace APIConsulta.Controllers
 
         }
 
-        // PUT api/consultas/5
+        // PATCH api/consultas/5
         [HttpPatch("{id}")]
         public void Patch(int id, [FromBody] int statusId)
         {
